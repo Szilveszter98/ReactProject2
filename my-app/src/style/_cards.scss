@@ -1,0 +1,96 @@
+.Cardmain {
+    position: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 100px;
+    .card_image img {
+        height: auto;
+        max-width: 100%;
+        vertical-align: middle;
+    }
+.btn {
+        color:  white;
+        padding: 1rem;
+        font-size: 20px;
+        text-transform: uppercase;
+        border-radius: 4px;
+        font-weight: 600;
+        display: block;
+        width: 100%;
+        cursor: pointer;
+        border: 2px solid white;
+        background-color:linear-gradient(to right,#38040e ,#800e13);;
+        position: relative;
+    }
+    .btn:hover {
+        color: black;
+        background-color: #2ec4b6;
+        border: 2px solid black;
+    }
+    .card_btn {
+        padding: 1rem;
+    }
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: auto;
+        padding: 0px;
+        
+    }
+    .cards_item {
+        display: flex;
+        padding: 1rem;
+    }
+    @media (min-width: 40rem) {
+        .cards_item {
+            width: 50%;
+            
+        }
+    }
+    @media (min-width: 56rem) {
+        .cards_item {
+            width: 30.3333%;
+            
+        }
+    }
+    .card {
+        background-color: $mainBlack;
+        border-radius: 8px;
+        box-shadow: 0 0 8px 1px $maincolor;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        margin: 18px;
+        text-shadow: 0 0 2px $mainBlack;
+        margin-bottom: 50px;
+        -webkit-box-shadow: 0px 6px 16px 10px rgba(0,0,0,0.75);
+ -moz-box-shadow: 0px 6px 16px 10px rgba(0,0,0,0.75);
+ box-shadow: 0px 6px 16px 10px rgba(0,0,0,0.75);
+    }
+    .card_content {
+        padding: 1rem;
+        background-color:#38040e;
+    }
+    .card_title {
+        color: $TextColor;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        margin: 0px;
+        text-decoration: underline;
+    }
+    .card_text {
+        color: $TextColor;
+        font-size: 15px;
+        line-height: 1.5;
+        margin-bottom: 1.25rem;
+        font-weight: 400;
+    }
+    .card_price{
+        color: white;
+        text-shadow: 0 0 2px $mainBlack;
+
+    }
+   }
