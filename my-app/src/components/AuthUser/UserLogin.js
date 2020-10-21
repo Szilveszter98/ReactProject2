@@ -34,15 +34,22 @@ uiConfig = {
   ]
 };
 
+
+
+
+
+
 componentDidMount(){
     
     firebase.auth().onAuthStateChanged((user)=>{
      if(user){  this.setState({user:user.email}) //user:user
        console.log(user);
+       
     }else{
         console.log("sorry");
     }
     })
+    
     //skicka data till parent
 }
  
@@ -92,6 +99,7 @@ onSubmitRegister(e) {
         res.user.sendEmailVerification();
        this.props.userCredential(res.user.email);
          this.props.showDisplayName(displayName);
+         
       });
   }
      //.then(()=>{
@@ -104,7 +112,7 @@ onSubmitRegister(e) {
 
  // aktivera verifering av email
  
- 
+
 
 
  resetPassword(e){
@@ -139,6 +147,9 @@ e.preventDefault();
               <input type="password" name="password" className={"login-password"} placeholder="Lösenord"/>
               <button className={"login-btn"}>Login</button>
             </form>}
+
+          
+    
 
               <br/>
 

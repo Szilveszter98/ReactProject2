@@ -13,6 +13,7 @@ class AdminProfile extends Component{
     render(){
         return(
             <div>
+                
                 Profile info {this.props.userData}
 
                  <button onClick={this.logOut.bind(this)}> Logout</button>
